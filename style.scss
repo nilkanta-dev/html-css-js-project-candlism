@@ -17,9 +17,13 @@ $primary-width: 100%;
   box-sizing: border-box;
 }
 body {
-  background-color: whitesmoke;
-  width: 100%;
-}
+  background: linear-gradient(
+  to bottom left,
+  #f7ede2 0%,
+  whitesmoke 50%,
+  #f7ede2 100%
+);
+width: 100%; }
 .header {
   display: flex;
 }
@@ -67,11 +71,23 @@ font-family: "Great Vibes";
   height: 250px;
   text-align: center;
 }
-.text-box button{
+.text-box button {
   padding: 5px;
-}
+  background-color: transparent;
+  border:2px solid black; }
+
+
 .text-box *{
   margin-top:40px;
+}
+
+.text-box h1{
+  font-size:3rem;
+  font-weight: 100;
+}
+
+.text-box h2{
+  font-size:1.5rem;
 }
 
 .products {
